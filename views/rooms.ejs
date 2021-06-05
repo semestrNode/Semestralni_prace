@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="/public/forms.css">
+  </head>
+<body>
+  
+<h2>Welcome <%= name %>, to live chat.</h2>
+<div class="container" id="container">
+    <form action="/rooms" method="POST">
+      <h1>Type 'create' or paste room-link</h1>
+      <span>room-link looks like 'room-string'</span>
+      <br>
+        <input
+          type="room"
+          id="room"
+          name="room"
+          class="form-control"
+          placeholder="Enter room"
+        />
+        <br>
+      <button type="submit">Create/Join</button>
+      <br>
+      <a href="/users/logout">Logout</a>
+    </form>
+</div>
+
+<footer>
+  <p>
+    Created by Tomas Zeman as a term work in JCU
+  </p>
+</footer>
+
+</body>
+</html>
+
+
+<style>
+  a {font-size: 150%;}
+</style>
